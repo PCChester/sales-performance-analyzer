@@ -1,5 +1,6 @@
 from analyzer import fetch_data, analyze
 from report import generate_report, save_report
+from charts import generate_charts
 
 def main():
     print("📦 Fetching sales data...")
@@ -19,6 +20,9 @@ def main():
     print("=" * 50)
 
     save_report(report, summary)
+
+    print("📊 Generating charts...")
+    generate_charts(summary)
 
 if __name__ == "__main__":
     main()
