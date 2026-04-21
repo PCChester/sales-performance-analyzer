@@ -27,3 +27,49 @@ in seconds. It demonstrates the core pattern behind agentic AI workflows:
 - **python-dotenv** — secure API key management
 
 ## Project Structure
+
+sales-performance-analyzer/
+├── data/               # Input dataset
+├── output/             # Generated reports
+├── analyzer.py         # Data fetching and Pandas analysis
+├── report.py           # Claude API integration and file output
+├── main.py             # Pipeline entry point
+├── .env                # API key (not committed)
+└── .gitignore
+
+## Setup & Usage
+
+1. Clone the repo
+2. Create a virtual environment and activate it:
+```bash
+   python -m venv venv
+   venv\Scripts\activate  # Windows
+   source venv/bin/activate  # Mac/Linux
+```
+3. Install dependencies:
+```bash
+   python -m pip install pandas anthropic python-dotenv requests
+```
+4. Add your Anthropic API key to a `.env` file:
+
+ANTHROPIC_API_KEY=your-key-here
+
+5. Run the pipeline:
+```bash
+   python main.py
+```
+
+## Sample Output
+
+The pipeline generates a structured executive report including:
+- Overall revenue summary and average order value
+- Top performing product categories
+- Regional revenue breakdown
+- Monthly trend analysis with anomaly flagging
+- 3 concrete, actionable business recommendations
+
+## Author
+
+Peter Christopher Chester
+[LinkedIn](https://www.linkedin.com/in/peter-christopher-chester-8b262353/) | 
+[Portfolio](https://yourportfolio.com)
