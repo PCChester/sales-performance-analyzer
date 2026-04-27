@@ -3,6 +3,20 @@
 An AI-powered data pipeline that automatically analyzes sales data and generates 
 a plain-English executive report using Python, Pandas, and the Claude API.
 
+## The Problem It Solves
+
+Most companies have more sales data than they have time to look at. A sales 
+manager running a team ends their week with a CSV export and a Tuesday morning 
+meeting to prepare for. The analysis that should take an afternoon gets 
+compressed into twenty minutes of gut-feel summary.
+
+The insights are in the data. They're just not surfaced.
+
+This pipeline does the analysis automatically — loading the data, running the 
+numbers across categories, regions, and trends, then sending a structured 
+summary to Claude, which returns a plain-English executive report with 
+actionable recommendations. The whole thing runs in seconds.
+
 ## What It Does
 
 1. Loads a sales dataset from a local CSV file
